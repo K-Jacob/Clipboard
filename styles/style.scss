@@ -1,0 +1,383 @@
+/* styles variable */
+
+$primary1: hsl(171, 66%, 44%);
+$primary2: hsl(233, 100%, 69%);
+$neutral1: hsl(210, 10%, 33%);
+$neutral2: hsl(201, 11%, 66%);
+
+/* global styles */
+
+body, *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: $neutral2;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $neutral1;
+}
+h1 {
+    font-size: 2.675rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+p {
+    line-height: 1.7rem;  
+    font-size: 1rem;
+}
+.container {
+    width: 96%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.flex-container {
+    display: flex;
+}
+
+/* download button styles */
+
+.download-btn {
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin: 1.8rem 5px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+.iOS {
+    background-color:hsl(171, 66%, 44%);
+    border-bottom: 3px solid #2E9A82;
+}
+.Mac {
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid #5A65C4;
+}
+
+/* header styles */
+
+header {
+    text-align: center;
+    padding-top: 6rem;
+    background: url(../img/bg-header-desktop.png) no-repeat top;
+    img {
+        width: 120px;
+        display: inline-block;
+        margin-bottom: 2.5rem;
+    }
+    p {
+        margin: 1.3rem auto;
+        font-size: 1.1rem;
+        width: 720px;
+    }
+}
+
+/* track snippets styles */
+
+.track-snippets {
+    text-align: center;
+    margin: 5rem 0 4rem;
+    p {
+        width: 55%;
+        margin: 1rem auto;
+    }
+}
+
+/* benefits styles */
+.benefits {
+    img {
+        float: left;
+        position: relative;
+        left: -30px;
+        width: 50%;
+    }
+    ul {
+        list-style: none;
+        float: left;
+        margin-left: 5%;
+    }
+    li {
+        width: 350px;
+        margin: 14% 0;
+    }
+    p {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+/* access anywhere styles */
+
+.access-anywhere {
+    text-align: center;
+    margin-top: 8%;
+    p {
+        width: 55%;
+        margin: 1% auto 6%; 
+    }
+    img {
+        width: 65%;
+    }
+}
+
+/* workflow styles */
+
+.workflow {
+    text-align: center;
+    margin-top: 5%;
+    p {
+        margin: 2% 0 4%;
+    }
+    .features {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        li {
+            flex: 1;
+            margin: 2%;
+            h3 {
+                margin: 8% 0 3%;
+            }
+        }
+    }
+    .companies {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        margin: 8% 0;
+    }
+}
+
+/* availability styles */
+
+.availability {
+    text-align: center;
+    p {
+        width: 55%;
+        margin: 2% auto 0.5%;
+    }
+    .download-btn {
+        padding: 0.8rem 1.3rem;
+    }
+}
+
+/* footer styles */
+footer {
+    background-color: #F5F6F8;
+    margin-top: 8%;
+    .flex-container {
+        justify-content: space-around;
+        align-items: center;
+        height: 130px;
+        img {
+            width: 50px;
+        }
+        .links {
+            display: flex;
+            position: relative;
+            left: -10%;
+            ul {
+                list-style: none;
+                margin-left: 30px;
+                a {
+                    color: $neutral1;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: 0.5rem 1rem;
+                    font-size: 17px;
+                    font-weight: 400;
+                    &:hover {
+                        color: $primary1;
+                    }
+                }
+            }
+        }
+        .social-links {
+            img {
+                width: 25px;
+                margin: 0 10px;
+                }
+        }
+    }
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 1125px){
+    .benefits {
+        text-align: center;
+        margin: 0 auto;
+        width: 96%;
+        img {
+            float: none;
+            width: 50%;
+            left: 0;
+        }
+        ul {
+            float: none;
+            margin: 8% 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        li {
+            margin: 0;
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .workflow {
+        img {
+            width: 125px;
+        }
+        p {
+            margin: 2% 0;
+        }
+        .features {
+            display: inline-block;
+            li {
+                flex: none;
+                margin: 8% 0;
+                h3 {
+                    margin: 0;
+                }
+                p {
+                    margin: 3% 0;    
+                }
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    footer {
+        .flex-container {
+            .links {
+                left: 0%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .track-snippets {
+        p {
+            width: 80%;
+        }
+    }
+    .workflow {
+        .companies {
+            li {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+    }
+    header {
+        p {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .access-anywhere {
+        p {
+            width: 80%;
+        }
+    }
+    .availability {
+        p {
+            width: 80%;
+        }
+    }
+    footer {
+        padding-bottom: 4%;
+        .container {
+            text-align: center;
+        }
+        .flex-container {
+            display: inline-block;
+            .logo {
+               margin: 35% 0 5%;
+               img {
+                   width: 50px;
+               }
+            }
+            .links {
+                display: inline-block;
+                margin: 5% 0;
+                ul {
+                    margin: 1% 0;
+                }
+            }
+            .social-links {
+                margin: 5% 0;
+                img {
+                    width: 20px;
+                    margin: 2% 8%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        .download-btn {
+            display: block;
+        }
+    }
+    .benefits {
+        ul {
+            display: inline-block;
+            li {
+                width: 80%;
+                margin: 5% auto;
+            }
+        }
+    }
+    .workflow {
+        .companies {
+            margin: 0;
+            display: inline-block;
+            li {
+                img {
+                    width: 95%;
+                    margin: 20% 0;
+                }
+            }
+        }
+    }
+    .availability {
+        margin-top: 5%;
+        .download-btn {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 465px) {
+    header {
+        background: url(../img/bg-header-mobile.png) no-repeat top;
+        background-size: 100%;
+    }
+}

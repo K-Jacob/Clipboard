@@ -1,0 +1,394 @@
+/* styles variable */
+/* global styles */
+body, *, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: #9fabb2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4c545d;
+}
+
+h1 {
+  font-size: 2.675rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 1.7rem;
+  font-size: 1rem;
+}
+
+.container {
+  width: 96%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* download button styles */
+.download-btn {
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin: 1.8rem 5px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.iOS {
+  background-color: #26baa4;
+  border-bottom: 3px solid #2E9A82;
+}
+
+.Mac {
+  background-color: #6173ff;
+  border-bottom: 3px solid #5A65C4;
+}
+
+/* header styles */
+header {
+  text-align: center;
+  padding-top: 6rem;
+  background: url(../img/bg-header-desktop.png) no-repeat top;
+}
+
+header img {
+  width: 120px;
+  display: inline-block;
+  margin-bottom: 2.5rem;
+}
+
+header p {
+  margin: 1.3rem auto;
+  font-size: 1.1rem;
+  width: 720px;
+}
+
+/* track snippets styles */
+.track-snippets {
+  text-align: center;
+  margin: 5rem 0 4rem;
+}
+
+.track-snippets p {
+  width: 55%;
+  margin: 1rem auto;
+}
+
+/* benefits styles */
+.benefits img {
+  float: left;
+  position: relative;
+  left: -30px;
+  width: 50%;
+}
+
+.benefits ul {
+  list-style: none;
+  float: left;
+  margin-left: 5%;
+}
+
+.benefits li {
+  width: 350px;
+  margin: 14% 0;
+}
+
+.benefits p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.benefits::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* access anywhere styles */
+.access-anywhere {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.access-anywhere p {
+  width: 55%;
+  margin: 1% auto 6%;
+}
+
+.access-anywhere img {
+  width: 65%;
+}
+
+/* workflow styles */
+.workflow {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.workflow p {
+  margin: 2% 0 4%;
+}
+
+.workflow .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.workflow .features li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 2%;
+}
+
+.workflow .features li h3 {
+  margin: 8% 0 3%;
+}
+
+.workflow .companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  margin: 8% 0;
+}
+
+/* availability styles */
+.availability {
+  text-align: center;
+}
+
+.availability p {
+  width: 55%;
+  margin: 2% auto 0.5%;
+}
+
+.availability .download-btn {
+  padding: 0.8rem 1.3rem;
+}
+
+/* footer styles */
+footer {
+  background-color: #F5F6F8;
+  margin-top: 8%;
+}
+
+footer .flex-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 130px;
+}
+
+footer .flex-container img {
+  width: 50px;
+}
+
+footer .flex-container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: -10%;
+}
+
+footer .flex-container .links ul {
+  list-style: none;
+  margin-left: 30px;
+}
+
+footer .flex-container .links ul a {
+  color: #4c545d;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+footer .flex-container .links ul a:hover {
+  color: #26baa4;
+}
+
+footer .flex-container .social-links img {
+  width: 25px;
+  margin: 0 10px;
+}
+
+/* responsive styles */
+@media screen and (max-width: 1125px) {
+  .benefits {
+    text-align: center;
+    margin: 0 auto;
+    width: 96%;
+  }
+  .benefits img {
+    float: none;
+    width: 50%;
+    left: 0;
+  }
+  .benefits ul {
+    float: none;
+    margin: 8% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefits li {
+    margin: 0;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .workflow img {
+    width: 125px;
+  }
+  .workflow p {
+    margin: 2% 0;
+  }
+  .workflow .features {
+    display: inline-block;
+  }
+  .workflow .features li {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    margin: 8% 0;
+  }
+  .workflow .features li h3 {
+    margin: 0;
+  }
+  .workflow .features li p {
+    margin: 3% 0;
+  }
+  .workflow .features li img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  footer .flex-container .links {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .track-snippets p {
+    width: 80%;
+  }
+  .workflow .companies li img {
+    width: 100px;
+  }
+  header p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .access-anywhere p {
+    width: 80%;
+  }
+  .availability p {
+    width: 80%;
+  }
+  footer {
+    padding-bottom: 4%;
+  }
+  footer .container {
+    text-align: center;
+  }
+  footer .flex-container {
+    display: inline-block;
+  }
+  footer .flex-container .logo {
+    margin: 35% 0 5%;
+  }
+  footer .flex-container .logo img {
+    width: 50px;
+  }
+  footer .flex-container .links {
+    display: inline-block;
+    margin: 5% 0;
+  }
+  footer .flex-container .links ul {
+    margin: 1% 0;
+  }
+  footer .flex-container .social-links {
+    margin: 5% 0;
+  }
+  footer .flex-container .social-links img {
+    width: 20px;
+    margin: 2% 8%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header .download-btn {
+    display: block;
+  }
+  .benefits ul {
+    display: inline-block;
+  }
+  .benefits ul li {
+    width: 80%;
+    margin: 5% auto;
+  }
+  .workflow .companies {
+    margin: 0;
+    display: inline-block;
+  }
+  .workflow .companies li img {
+    width: 95%;
+    margin: 20% 0;
+  }
+  .availability {
+    margin-top: 5%;
+  }
+  .availability .download-btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  header {
+    background: url(../img/bg-header-mobile.png) no-repeat top;
+    background-size: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
